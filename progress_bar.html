@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myProgress {
+  border-radius: 30px;
+  width: 15%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 0%;
+  border-radius: 30px;
+  height: 30px;
+  background-color: #eee;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  visibility:visible;
+}
+/*.bar{
+	visibility:hidden;
+}*/
+</style>
+<body>
+<div>
+<div class="bar" id="myProgress">
+  <div id="myBar"></div>
+</div>
+<div class="bar" id="myProgress">
+  <div id="myBar"></div>
+</div>
+<span id="dot1" class="dot"></span>
+<span id="dot2" class="dot"></span>
+<span id="dot3" class="dot"></span>
+
+</div>
+<button onclick="move()">Click Me</button> 
+<button onclick="diapo()"> Me</button>
+
+<script>
+var nb_dot=1;
+function diapo(){
+	document.getElementById("dot1").style.visibility="hidden";
+	document.getElementById("dot2").style.visibility="hidden";
+}
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 50);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+</script>
+/*
+les points et les bar sont confondus et on affiche la bar et les suivants ont est a quelles images
+
+*/
+
+</body>
+</html>
