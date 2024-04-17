@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.sports{
+    /*background-color: red;*/
+    margin-left: 45%;
+    margin-top: 10%;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sports ul li{
+    color: black;
+}
+.partgauche{
+    padding-top: 0%;
+    padding-right: 55%;
+    padding-left: 20px;
+}
+#image{
+    display: none;
+}
