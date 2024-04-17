@@ -1,4 +1,4 @@
-//partie bar de menu;
+/* PARTIE EN TETE */
 *{
     margin: 0;
     padding: 0;
@@ -95,11 +95,12 @@ header{
         background-color : rgba(255,255,255,0.09);
     }
 }
-//fin bar de menu;
 
 
+
+
+/* PARTIE FOOTER */
 /*
-//Partie footer
 * {
   margin: 0;
   padding: 0;
@@ -284,7 +285,7 @@ body {
 
 
 
-//PARTIE BOUTIQUE
+/* PARTIE BOUTIQUE */
 
 .boutique_container {
     display: grid;
