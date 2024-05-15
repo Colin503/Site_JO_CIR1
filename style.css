@@ -100,22 +100,7 @@ header{
 
 
 /* PARTIE FOOTER */
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
-body {
-  display: flex;
-  background: #fff;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100vh;
-}
-*/
 .logo_social{
 	width:64px;
 	height:64px;
@@ -134,8 +119,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
 }
 
 .social-icon,
@@ -290,30 +273,57 @@ body {
 /* PARTIE BOUTIQUE */
 
 .boutique_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
 .boutique_item {
-   border: 1px solid #ccc;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-   padding: 20px;
-   text-align: center;
-    }
-  
+ border: 1px solid #ccc;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ padding: 20px;
+ text-align: center;
+ margin: 20px auto;
+  width: 300px;
+  }
+
 /* Responsive Design */
 @media (max-width: 600px) {
-    .boutique_container {
-      grid-template-columns: 1fr; /* Une colonne pour petits écrans */
-    }
+  .boutique_container {
+    grid-template-columns: 1fr; /* Une colonne pour petits écrans */
   }
-  
+}
+
+.boutique_item img {
+  width: 100%;
+  height: auto;
+}
+
+select {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+
+
+.boutique_button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.boutique_button:hover {
+  background-color: #004494;
+}
 
 .boutique_item img, .item img {
-  width: 100%;  /* Assure que l'image remplit la largeur de son conteneur */
-  height: auto; /* Maintient le ratio d'aspect original de l'image */
-  display: block; /* Élimine tout espace blanc sous l'image */
-  }
-
+width: 100%;  /* Assure que l'image remplit la largeur de son conteneur */
+height: auto; /* Maintient le ratio d'aspect original de l'image */
+display: block; /* Élimine tout espace blanc sous l'image */
+}
