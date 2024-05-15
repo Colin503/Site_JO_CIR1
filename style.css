@@ -95,8 +95,18 @@ header{
         background-color : rgba(255,255,255,0.09);
     }
 }
-
-
+/*Diapo*/
+.diapo_button{
+  background-color:#ddd;
+  background-clip: padding-box;
+  border-radius: 2em;
+  cursor: pointer;
+  padding: 0.85em;
+  max-width: 100%;
+  width: 6em;
+  border-bottom-color:#bbb;
+	
+}
 
 
 /* PARTIE FOOTER */
