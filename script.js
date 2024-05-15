@@ -45,6 +45,12 @@ function timer() {
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
+
+function addToCart() {
+    console.log('Ajouté au panier!');
+    alert('Ajouté au panier!')
+    // Ici, vous pouvez ajouter du code pour manipuler le panier d'achat
+}
     }
     }, 1000);
 }
