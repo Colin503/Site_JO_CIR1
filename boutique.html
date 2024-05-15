@@ -7,83 +7,137 @@
 </head>
 
 <body>
-    <h1>La Boutique (Mettre Menu déroulant de Victor)</h1>
+
+    <nav class="Navbar">
+      <div class="nav-links">
+          <ul>
+              <li><a href="index.html"><img src="img/logo.png" class="logo1"></a></li>
+              <li class="active"><a href="#">Jeux</a></li>
+              <li><a href="#">Boutique</a></li>
+              <li><a href="index.html"><img src="img/logo.png" class="logo"></a></li>
+              <li><a href="#">Calendrier</a></li>
+              <li><a href="#">Contacts</a></li>
+          </ul>
+      </div>
+      <img src="menubouton.png" alt="menu" class="menubouton">
+  </nav>
+  <header></header>
     <div class="boutique_container">
-    <div class="boutique_item" id="item1">
-        <a  href="item1.html">
+      <div class="boutique_item" id="item1">
         <img src="img/item1.avif">
-        <p>Prix : 33,00€</p>
         <p>T-shirt Jeux Paralympiques Paris 2024</p>
-    </a>
+        <p>Prix : 33,00€</p>
+        <label for="size">Taille:</label>
+        <select id="size" name="size">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+        </select>
+        <button type="button" class="boutique_button" onclick="addToCart()">Ajouter au panier</button>
     </div>
 
     <div id="item2" class="boutique_item">
-        <a  href="item1.html">
         <img src="img/item2.avif">
         <p>Prix : 25,00€</p>
         <p>T-shirt Logo Jeux Paralympiques Paris 2024</p>
-    </a>
+        <label for="size">Taille:</label>
+        <select id="size" name="size">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+        </select>
+        <button type="button" class="boutique_button" onclick="addToCart()">Ajouter au panier</button>
     </div>
 
     <div id="item3" class="boutique_item">
-        <a  href="item1.html">
         <img src="img/item3.avif">
         <p>Prix : 50,00€</p>
         <p>Sweat à capuche mascotte Jeux Paralympiques de Paris 2024 </p>
-    </a>
+        <label for="size">Taille:</label>
+        <select id="size" name="size">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+        </select>
+        <button type="button" class="boutique_button" onclick="addToCart()">Ajouter au panier</button>
     </div>
     
     <div id="item4" class="boutique_item">
-        <a  href="item1.html">
         <img src="img/item4.avif">
         <p>Prix : 33,00€ 20€</p> <!-- Mettre une promotion + Barré le prix initial en css -->
         <p>Pull de Noël Mascotte Paris 2024</p>
-    </a>
+        <label for="size">Taille:</label>
+        <select id="size" name="size">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+        </select>
+        <button type="button" class="boutique_button" onclick="addToCart()">Ajouter au panier</button>
     </div>
 
     <div id="item5" class="boutique_item">
-        <a  href="item1.html">
         <img src="img/item5.avif">
         <p>Prix : 32,00€</p>
         <p>Short tissé Jeux Olympiques de Paris 2024</p>
-    </a>
+        <label for="size">Taille:</label>
+        <select id="size" name="size">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+        </select>
+        <button type="button" class="boutique_button" onclick="addToCart()">Ajouter au panier</button>
     </div>
 
     <div id="item6" class="boutique_item">
-        <a  href="item1.html">
         <img src="img/item6.avif">
         <p>Prix : 48,00€</p>
         <p>Pantalon de survêtement JO Paris 2024 </p>
-    </a>
+        <label for="size">Taille:</label>
+        <select id="size" name="size">
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+        </select>
+        <button type="button" class="boutique_button" onclick="addToCart()">Ajouter au panier</button>
     </div>
     </div>
-  <footer class="footer">
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div>
-    <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="https://fr-fr.facebook.com/Paris2024/">
-          <img class="logo_social" src="omg/fc_logo.png">
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/jeuxolympiques">
-         
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/jeuxolympiques">
-        
-        </a></li>
-    </ul>
-    <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Jeux</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Boutique</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Calendrier</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
 
-    </ul>
-    <p>&copy;2024 CIR 1 Rennes | All Rights Reserved</p>
-  </footer>
+    <br><br><br><br><br><br><br><br><br>
+
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://fr-fr.facebook.com/Paris2024/">
+              <img class="logo_social" src="img/fc_logo.png">
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/jeuxolympiques">
+             
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/jeuxolympiques">
+            
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Jeux</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Boutique</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Calendrier</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+        </ul>
+        <p>&copy;2024 CIR 1 Rennes | All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
