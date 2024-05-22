@@ -5,6 +5,10 @@
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Ajoute du JavaScript ici pour rendre le calendrier interactif
+    // Par exemple, pour ajouter des événements sur les jours
+});
 
 
 
