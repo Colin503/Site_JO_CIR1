@@ -238,9 +238,63 @@ header{
 }
 
 
+/* PARTIE CALENDRIER  */
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.month {
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.month h2 {
+    text-align: center;
+}
+
+.month table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.month th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: center;
+}
 
 
 
+tr.month {
+  width: 20px;
+    height: 20px;
+}
+
+.month tr {
+    width: 20px;
+    height: 20px;
+}
+
+.jo_day {
+    background-color: #d7c379;
+}
+
+/* PARTIE FOOTER */
+
+.logo_social{
+	width:64px;
+	height:64px;
+	
+	
+	
+}
 
 
 
