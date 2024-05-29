@@ -46,3 +46,10 @@ function addToCart() {
     }
     }, 1000);
 }
+
+
+
+function formulaire_envoye() {
+    console.log('Vous êtes inscrit en tant que spectateur !');
+    alert('Vous êtes inscrit en tant que spectateur !');
+}
