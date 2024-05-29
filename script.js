@@ -1,15 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
 function timer() {
     // Set the date we're counting down to
     var countDownDate = new Date("July 26, 2024 14:00:00").getTime();
@@ -50,7 +40,19 @@ function addToCart() {
 
 
 
-function formulaire_envoye() {
-    console.log('Vous êtes inscrit en tant que spectateur !');
-    alert('Vous êtes inscrit en tant que spectateur !');
+function validateForm() {
+    var nom = document.getElementById("nom").value;
+    var prenom = document.getElementById("prenom").value;
+    var email = document.getElementById("email").value;
+    var telephone = document.getElementById("telephone").value;
+    var sport = document.getElementById("sport").value;
+    var date = document.getElementById("date").value;
+
+    if (nom === "" || prenom === "" || email === "" || telephone === "" || sport === "" || date === "") {
+        alert("Veuillez remplir tous les champs.");
+        return false;
+    }
+    alert("Vous êtes inscrit en tant que spectateur !");
+    return true;
 }
+
