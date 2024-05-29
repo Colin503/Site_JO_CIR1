@@ -38,13 +38,14 @@ function timer() {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED";
 
+    }
+    }, 1000);
+}
+
 function addToCart() {
     console.log('Ajouté au panier!');
     alert('Ajouté au panier!')
     // Ici, vous pouvez ajouter du code pour manipuler le panier d'achat
-}
-    }
-    }, 1000);
 }
 
 
