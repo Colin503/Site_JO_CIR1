@@ -52,6 +52,75 @@ function validateForm() {
         alert("Veuillez remplir tous les champs.");
         return false;
     }
+
+
+
+document.querySelectorAll('.slink').forEach(link => {
+    link.addEventListener('mouseover', () => {
+        document.querySelectorAll('.simage').forEach(image => {
+            image.style.display = 'none';
+        });
+        const imageId = link.getAttribute('data-image');
+        document.getElementById(imageId).style.display = 'block';
+    });
+
+    link.addEventListener('mouseout', () => {
+        document.getElementById(link.getAttribute('data-image')).style.display = 'none';
+    });
+});
+function lessports(){
+    if (window.innerWidth <= 900) {
+        var sportimage = document.getElementById("sportimage-container");
+        sportimage.style.display="none";
+    }
+    else{
+        sportimage.style.display="flex";
+    }
+}
+
+
+
+
+
+function toggleMenu() {
+    if (window.innerWidth <= 900) {
+      var navLinks = document.getElementById("navfacile");
+      var divbad = document.getElementById("suitebadminton");
+      var imgb = document.getElementById("imgbad");
+    
+      if (navLinks.style.display === "block") {
+          navLinks.style.display = "none";
+          divbad.style.display="block";
+          imgb.style.display="block";
+          /*document.body.style.backgroundColor="#FFFFFF";*/
+          
+
+      } 
+      else {
+          navLinks.style.display = "block";
+          divbad.style.display="none";
+          imgb.style.display="none";
+          /*document.body.style.backgroundColor="#142b63";*/
+
+      }
+    }
+
+  }
+  window.addEventListener('resize', function() {
+    var navLinks = document.getElementById("navfacile");
+    var divbad = document.getElementById("suitebadminton");
+      var imgb = document.getElementById("imgbad");
+    if (window.innerWidth >= 900) {
+        navLinks.style.display = "flex";
+        divbad.style.display="flex";
+        imgb.style.display="block";
+    } else {
+        navLinks.style.display = "none";
+        divbad.style.display="block";
+        
+        
+    }
+});
     alert("Vous êtes inscrit en tant que spectateur !");
     return true;
 }
