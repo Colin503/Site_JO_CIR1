@@ -134,6 +134,9 @@ display: block;
   border-bottom-color:#bbb;
 	
 }
+#myImg{
+	width:100%;
+}
 
 
 /* PARTIE FOOTER */
