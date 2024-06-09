@@ -124,4 +124,39 @@ function toggleMenu() {
     alert("Vous êtes inscrit en tant que spectateur !");
     return true;
 }
+var diapoRolling = 0;
+var currentImg = 0;
+var nbImg = 3;
+var images = ["img/basket_diapo.jpg","img/athlé_diapo.jpg","img/natation_diapo.jpg"];
+function prev() {
+  	currentImg--;
+    if(currentImg < 0){
+    	currentImg = nbImg - 1;
+    }
+    document.getElementById("myImg").src = images[currentImg];
+}
 
+function next() {
+    currentImg++;
+    if(currentImg > nbImg - 1){
+    	currentImg = 0;
+    }
+	//alert(images[currentImg]);
+    document.getElementById("myImg").src=images[currentImg];
+}
+
+function startstop(){
+	timer();
+	if(diapoRolling==0){
+    	diapoRolling = 1;
+	launch();
+    } else {
+    	clearTimeout(myVar);
+        diapoRolling = 0;
+    }
+}
+
+function launch(){
+	myVar = setTimeout(launch,3000);
+    	next();
+}
