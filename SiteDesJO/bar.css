@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.fond{
+    background: url(joseine.jpg);
+    background-size: cover;
+}
+header{
+    height: 100vh;
+    width:10vw;
+
+}
+.Navbar{
+    position: absolute;
+    padding-left: 25%;
+    padding-right: 12.5%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.Navbar a{
+    color: black;
+}
+.logo{
+    width: 80px;
+    height: 84.4px;
+}
+.logo1{
+    display: none;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.Navbar .nav-links ul{
+    display: flex;
+}
+.Navbar .nav-links ul li{
+    margin: 0 25px;
+}
+/*.Navbar .nav-links ul li.active a{
+    font-weight: 600;
+}*/
+.Navbar .menubouton{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+@media screen and (max-width:860px){
+    .logo1{
+        display: block;
+        width: 80px;
+        height: 84.4px;
+    }
+    .logo{
+        display: none;
+    }
+    .Navbar{
+        padding: 0 ;
+    }
+    .Navbar .menubouton{
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        width: 0;
+        position: absolute;
+        /*background-color: rgba(255, 255, 255, 0.299);*/
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fond{
+        
+        background-color : rgba(255,255,255,0.09);
+    }
+}

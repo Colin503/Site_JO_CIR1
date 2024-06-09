@@ -1,0 +1,78 @@
+.tousLesSports{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.sportcontainer {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+}
+
+.sportimage-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simage {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.sportlink-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.slink {
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+}
+
+.slink:hover {
+    cursor: pointer;
+    font-size: 24px;
+}
+.imgbad{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.full-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Agauche{
+    background-color: red;
+    /*display: flex;*/
+    padding-right: 50%;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
